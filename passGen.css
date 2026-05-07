@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--MainBgDeepNavy);
+    font-family: var(--ff-Inter);
+}
+
+html {
+    font-size: 62.5%;
+}
+
+span {
+    display: inline-block;
+}
+:root {
+    --MainBgDeepNavy: #0F172A;
+    --CardBgGlassDark: rgba(255, 255, 255, 0.08);
+    --PriElectricBlue: #3B82F6;
+    --SecdAccenViolet: #7C3AED;
+    --BtnHoverBrightBlue: #2563EB;
+    --InpBgDarkSlate: #111827;
+    --TxPriWhite: #FFFFFF;
+    --TxSecdGray: #CBD5E1;
+    --BordTranWhite: rgba(255, 255, 255, 0.12);
+    --SuccessStrengthNeoGreen: #22C55E;
+    --ff-Inter: "Inter", sans-serif;
+
+}
+
+
+.mainContnr {
+    max-width: 1200px;
+    width: 95%;
+    height: 100dvh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.genBody {
+    max-width: 70rem;
+    width: 100%;
+    max-height: 50rem;
+    height: 100%;
+    background-color: var(--CardBgGlassDark);
+    border: 2px solid var(--BordTranWhite);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 2rem 3rem;
+}
+
+.heady {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+i {
+    font-size: 4rem;
+    color: var(--TxSecdGray);
+}
+.heady h1 {
+    color: var(--TxPriWhite);
+}
+.heady span {
+    color: var(--BtnHoverBrightBlue);
+}
+.heady p {
+    color: var(--TxSecdGray);
+}
+.heady >:nth-child(2){
+    max-width: 10rem;
+    width: 100%;
+}
+.genPassword {
+    width: 100%;
+    max-height: 4.5rem;
+    background-color: var(--InpBgDarkSlate);
+    border-radius: 4px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.password {
+    font-size: 1.6rem;
+    color: var(--TxPriWhite);
+}
+
+.errorMessageBox {
+    color: white;
+    padding: 1rem;
+    max-width: 25rem;
+    width: 100%;
+    position: absolute;
+    right: 0;
+    bottom: 3rem;
+    display: flex;
+}
+
+.errorMessageBox>:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.closeError {
+    position: absolute;
+    right: 0rem;
+    top: 0;
+    background-color: #000;
+    color: red;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    display: none;
+}
+
+.closeErrorTwo {
+    display: none;
+}
+
+.errorMessage,
+.errorMessagePassLength {
+    background: red;
+    padding: 1rem;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 1.4rem;
+    display: none;
+}
+
+.genPassParameters {
+    display: flex;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 4px;
+    background-color: var(--InpBgDarkSlate);
+}
+
+.genPassParameters>:first-child,
+.genPassParameters> :nth-child(2) {
+    /* background-color: #cdcdda; */
+    flex-basis: 50%;
+    padding: 1rem 2rem;
+    color: var(--TxPriWhite);
+}
+
+.genPassParameters>:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.warningSpanBox {
+    display: flex;
+    gap: 1rem;
+    background-color: var(--MainBgDeepNavy);
+    border: 1px solid var(--BordTranWhite);
+    color: var(--TxSecdGray);
+    padding: 20px 10px;
+    border-radius: 4px;
+    max-height: 50%;
+    height: 100%;
+}
+.warningSpan {
+    align-self: flex-start;
+    color: red;
+    font-size: 1.2rem;
+    border: 2px solid red;
+    padding: 1px 5px;
+    border-radius: 50%;
+}
+
+.genPassParameters> :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.passParameterbox {
+    padding: 1px 1px 1px 10px ;
+    border-radius: 2px;
+
+}
+.passParameterbox:hover {
+    background-color: var(--BordTranWhite);
+    color: var(--MainBgDeepNavy);
+}
+
+.passText {
+    font-size: 1.8rem;
+}
+
+.labelBox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+}
+.parameterLabel {
+    font-size: 1.5rem;
+    width: 70%;
+}
+
+
+.egSpan {
+    font-size: 1rem;
+    color: #8484c6;
+}
+
+.smallSpan {
+    font-size: 1.3rem;
+}
+
+#passLength {
+    text-align: center;
+    padding: 4px 0;
+    background-color: var(--CardBgGlassDark);
+    border: 1px solid var(--BordTranWhite);
+    border-radius: 4px;
+    color: var(--TxPriWhite);
+}
+
+#passLength:focus {
+    outline: none;
+}
+
+#passLength:focus>::placeholder {
+    display: none;
+    color: var(--TxPriWhite);
+}
+
+.passParameterbox {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+#passContUpper {}
+
+#passContLower {}
+
+#passContNumber {}
+
+#passContSpecial {}
+
+.btnBox {}
+
+#btn {
+    padding: 1rem 8rem;
+    background-color: var(--PriElectricBlue);
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+#btn:hover {
+    background-color: var(--BtnHoverBrightBlue);
+}
+
+#btn:active {
+    background-color: hsl(217, 91%, 40%);
+}
